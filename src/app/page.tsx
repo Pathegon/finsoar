@@ -276,6 +276,25 @@ export default function Home() {
                   actionable intelligence. Professional insights for the modern investor.
                 </p>
                 
+                {/* Structured Data for SEO */}
+                <script
+                  type="application/ld+json"
+                  dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                      "@context": "https://schema.org",
+                      "@type": "WebSite",
+                      "name": "Finsoar",
+                      "description": "A curated finance newsletter designed to cut through market noise and deliver actionable intelligence. Professional insights for the modern investor.",
+                      "url": "https://finsoar.com",
+                      "potentialAction": {
+                        "@type": "SearchAction",
+                        "target": "https://finsoar.com/search?q={search_term_string}",
+                        "query-input": "required name=search_term_string"
+                      }
+                    })
+                  }}
+                />
+                
                 <motion.div 
                   className="inline-flex items-center gap-2 px-4 py-2 bg-pink-50/80 text-pink-600 rounded-full text-sm font-medium border border-pink-100/60"
                   initial={{ opacity: 0, scale: 0.9 }}
