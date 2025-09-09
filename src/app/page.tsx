@@ -416,7 +416,7 @@ export default function Home() {
                         whileHover={{ scale: 1.02 }}
                         transition={{ type: "spring", stiffness: 300 }}
                       >
-                        <div className="text-2xl font-light text-pink-400 mb-1">Q1 2025</div>
+                        <div className="text-2xl font-light text-pink-400 mb-1">Q4 2025</div>
                         <div className="text-xs text-slate-400 uppercase tracking-wide">Launch</div>
                       </motion.div>
                     </motion.div>
